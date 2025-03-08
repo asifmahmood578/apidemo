@@ -56,6 +56,7 @@ public class RegistrationService {
 //        registrationDto.setName(registration.getName());
 //        registrationDto.setEmailId(registration.getEmailId());
 //        registrationDto.setMobile(registration.getMobile());
+//       some changes has to be done here
 
         return dto;
 
@@ -94,4 +95,5 @@ public class RegistrationService {
             Regstration reg = regstrationRepository.findById(id).orElseThrow(()->new ResourceNotFound("Resource not found"));
             return reg;
     }
+    
 }
